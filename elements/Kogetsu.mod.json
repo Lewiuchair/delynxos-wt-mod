@@ -21,7 +21,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -35,6 +35,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "MeleeTrionDamage"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
