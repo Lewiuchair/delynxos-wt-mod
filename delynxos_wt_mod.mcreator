@@ -1,0 +1,89 @@
+{
+  "mod_elements": [
+    {
+      "name": "IsTriggerActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_trigger_active",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/delynxoswtmod/procedures/IsTriggerActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BorderTrigger",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "border_trigger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/delynxos_wt_mod/models/item/border_trigger.json",
+          "src/main/java/net/mcreator/delynxoswtmod/item/BorderTriggerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TriggerToggle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger_toggle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/delynxoswtmod/procedures/TriggerToggleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "triggeractive",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "item.delynxos_wt_mod.border_trigger": "Border Trigger"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "delynxos_wt_mod",
+    "modName": "delynxos wt mod",
+    "version": "1.0.0",
+    "author": "redst, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.4",
+    "modElementsPackage": "net.mcreator.delynxoswtmod"
+  },
+  "mcreatorVersion": 202400118518
+}
