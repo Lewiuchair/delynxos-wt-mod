@@ -1,0 +1,38 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_trion",
+          "text": {
+            "fixedValue": "",
+            "name": "GetTrion"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 43,
+          "y": 148
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "IsTriggerActive"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 6,
+      "snapOnGrid": true
+    }
+  }
+}

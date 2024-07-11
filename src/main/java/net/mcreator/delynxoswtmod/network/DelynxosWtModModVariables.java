@@ -60,6 +60,8 @@ public class DelynxosWtModModVariables {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
 			clone.triggeractive = original.triggeractive;
+			clone.trion = original.trion;
+			clone.guarding = original.guarding;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -68,17 +70,23 @@ public class DelynxosWtModModVariables {
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public boolean triggeractive = false;
+		public double trion = 100.0;
+		public double guarding = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("triggeractive", triggeractive);
+			nbt.putDouble("trion", trion);
+			nbt.putDouble("guarding", guarding);
 			return nbt;
 		}
 
 		@Override
 		public void deserializeNBT(CompoundTag nbt) {
 			triggeractive = nbt.getBoolean("triggeractive");
+			trion = nbt.getDouble("trion");
+			guarding = nbt.getDouble("guarding");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

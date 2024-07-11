@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "trigger",
+    "texture": "kogetsu",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Border Trigger",
+    "name": "Kogetsu",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "No creative tab entry"
@@ -35,9 +35,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "TriggerToggle"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

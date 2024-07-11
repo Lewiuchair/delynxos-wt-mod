@@ -1,25 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "IsTriggerActive",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "is_trigger_active",
-      "metadata": {
-        "return_type": "number",
-        "files": [
-          "src/main/java/net/mcreator/delynxoswtmod/procedures/IsTriggerActiveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "BorderTrigger",
       "type": "item",
       "compiles": true,
@@ -49,6 +30,91 @@
           }
         ]
       }
+    },
+    {
+      "name": "Kogetsu",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kogetsu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/delynxoswtmod/item/KogetsuItem.java",
+          "src/main/resources/assets/delynxos_wt_mod/models/item/kogetsu.json"
+        ]
+      }
+    },
+    {
+      "name": "IsTriggerActive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_trigger_active",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/delynxoswtmod/procedures/IsTriggerActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MainView",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_view",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/delynxoswtmod/client/screens/MainViewOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "GetTrion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_trion",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/delynxoswtmod/procedures/GetTrionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeleeTrionDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melee_trion_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/delynxoswtmod/procedures/MeleeTrionDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -57,13 +123,26 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "trion",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "guarding",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
     "en_us": {
-      "item.delynxos_wt_mod.border_trigger": "Border Trigger"
+      "item.delynxos_wt_mod.border_trigger": "Border Trigger",
+      "item.delynxos_wt_mod.kogetsu": "Kogetsu"
     }
   },
   "foldersRoot": {
